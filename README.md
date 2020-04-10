@@ -1,2 +1,2 @@
 # Simon Dice
- Juego web
+Juego web para praticar conocimientos en programacion basicos!
