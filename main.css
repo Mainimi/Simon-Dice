@@ -5,13 +5,13 @@ body {
     min-height: 100vh;
     display: flex;
     flex-flow: column wrap;
-    background: white;
+    background: #c6ecd9;
     font-family: "Montserrat", sans-serif;
     font-weight: 300;
     font-size: 16px;
     line-height: 32px;
   }
-header h1 {
+h1, h2 {
     font-family: "Montserrat", sans-serif;
     color: white;
     font-size: 30px;
@@ -25,9 +25,19 @@ header{
     flex: 0 1 auto;
     background-color: black;
     width: 100%;
-    border: 5px solid firebrick;
+    border-bottom: 10px solid #666699;
+    
   }
-button {
+
+
+footer{
+   border-top: 10px solid #666699;
+    width: 100%;
+    background-color: black;
+    position: absolute;
+    bottom: 0;
+}
+ button {
     font-family: "Montserrat", sans-serif;
     font-weight: 600;
     font-size: 18px;
@@ -38,9 +48,25 @@ button {
     border-radius: 1em;
     background: #79d2a6;
     color: white;
-    cursor: pointer; 
-    transition: all 0.3s ease-in-out;
     margin-left: 50%;
     transform: translateX(-50%);
     
+    
+}
+
+div {
+    margin-top:1%;
+    margin-bottom: 5%;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    width: 90vw;
+    height: 90vh;
+    max-width: 500px;
+    max-height: 500px;
+    border-radius: 15em;
+    text-align: center;
+    background: #333333;
+    display: flex;
+    
+
 }
