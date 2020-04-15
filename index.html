@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Simon Dice</title>
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Estilos -->
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="node_modules\bootstrap\dist\css\bootstrap.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  </head>
+  <body>
+          <!-- Barra de informacion -->
+          <div class="row bg-dark text-center " id="barraInformacion">
+            <div class="col-md-7 mt-2 pl-5 rounded-pill">
+              <div class="alert alert-light rounded-pill" role="alert">
+                <strong class="text-dark piola" id="estadoJuego">PULSA COMENZAR A JUGAR ^-^</strong>
+              </div>
+            </div>
+            <div class="col-md-2 mt-2">
+              <div class="alert alert-light rounded-pill" role="alert">
+                <strong class="text-dark piola">RONDA:</strong>
+                <strong class="text-dark piola" id="numeroRonda">0</strong>
+              </div>
+            </div>
+            <div class="col-md-3 mt-3 pl-5 ">
+             <button type="button" id="botonInicio" class="btn btn-warning text-dark rounded-pill piola" >COMENZAR A JUGAR!</button>
+            </div>
+          </div>
+          <!-- botones -->
+          <div class="container-flex cuerpo" id="bloqueBotones">
+
+            <div class="container pt-5 pb-5" >
+              <div class="row">
+                <div class="col-6 bg-success cuadro cuadro-1"></div>
+                <div class="col-6 bg-info cuadro cuadro-2"></div>
+              </div>
+              <div class="row ">
+                <div class="col-6 bg-danger cuadro cuadro-3"></div>
+                <div class="col-6 bg-warning cuadro cuadro-4"></div>
+              </div>
+            </div>
+          </div>
+          <button id="calcular salario anual">Hola</button>
+          </div>
+         <footer class="fixed-bottom">
+        <h1>BY MAINIMI</h1>
+         </footer>
+    
+    <!-- Scripts -->
+    <script src="index.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" "></script>
+    <script src="node_modules\bootstrap\dist\js\bootstrap.js"></script>
+  </body>
+</html>

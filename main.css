@@ -1,0 +1,38 @@
+
+.cuadro{
+  height: 200px;
+}
+
+.cuadro-1{
+  border-radius: 1000px 0px 0px 0px;
+}
+.cuadro-2{
+  border-radius: 0px 1000px 0px 0px;
+}
+.cuadro-4{
+  border-radius: 0px 0px 1000px 0px;
+}
+.cuadro-3{
+  border-radius: 0px 0px 0px 1000px;
+}
+#bloqueBotones{
+  background: #4CB8C4;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to bottom, #3CD3AD, #4CB8C4);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to bottom, #3CD3AD, #4CB8C4); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+}
+footer{
+  
+  width: 100%;
+  background-color: black;
+  font-family: "Montserrat", sans-serif;
+  color: white;
+  font-size: 30px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.piola{
+  font-family: "Montserrat", sans-serif;
+}
