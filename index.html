@@ -7,18 +7,41 @@
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
     <script src='main.js'></script>
-</head>
-<body>
-    <header>
-        <h1>Simon Dice :)</h1>
-        <button>Comenzar nuevo juego</button>
-    </header>
-    <div>
+  <body>
+          <!-- Barra de informacion -->
+          <div class="row bg-dark text-center " id="barraInformacion">
+            <div class="col-md-7 mt-2 pl-5 rounded-pill">
+              <div class="alert alert-light rounded-pill" role="alert">
+                <strong class="text-dark piola" id="estadoJuego">PULSA COMENZAR A JUGAR ^-^</strong>
+              </div>
+            </div>
+            <div class="col-md-2 mt-2">
+              <div class="alert alert-light rounded-pill" role="alert">
+                <strong class="text-dark piola">RONDA:</strong>
+                <strong class="text-dark piola" id="numeroRonda">0</strong>
+              </div>
+            </div>
+            <div class="col-md-3 mt-3 pl-5 ">
+             <button type="button" id="botonInicio" class="btn btn-warning text-dark rounded-pill piola" >COMENZAR A JUGAR!</button>
+            </div>
+          </div>
+          <!-- botones -->
+          <div class="container-flex cuerpo" id="bloqueBotones">
+
+            <div class="container pt-5 pb-5" >
+              <div class="row">
+                <div class="col-6 bg-success cuadro cuadro-1"></div>
+                <div class="col-6 bg-info cuadro cuadro-2"></div>
+              </div>
+              <div class="row ">
+                <div class="col-6 bg-danger cuadro cuadro-3"></div>
+                <div class="col-6 bg-warning cuadro cuadro-4"></div>
+              </div>
+            </div>
+          </div>
+          <button id="calcular salario anual">Hola</button>
+          </div>
+         <footer class="fixed-bottom">
+        <h1>BY MAINIMI</h1>
+         </footer>
     
-       
-    </div>
-    <footer>
-       <h2>by Mainimi</h2>
-    </footer>
-</body>
-</html>
