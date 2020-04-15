@@ -36,3 +36,7 @@ footer{
 .piola{
   font-family: "Montserrat", sans-serif;
 }
+html,body,.cuerpo{
+  margin:0px;
+  height:100%;
+  }
