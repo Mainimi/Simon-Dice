@@ -1,0 +1,23 @@
+{
+  "name": "simon-dice",
+  "version": "1.0.0",
+  "description": "Juego web del clasico simon dice a modo de practica",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Mainimi/Simon-Dice.git"
+  },
+  "author": "Mainimi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Mainimi/Simon-Dice/issues"
+  },
+  "homepage": "https://github.com/Mainimi/Simon-Dice#readme",
+  "dependencies": {
+    "bootstrap": "^4.4.1",
+    "jquery": "^3.5.0"
+  }
+}
