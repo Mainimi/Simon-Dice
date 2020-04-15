@@ -1,72 +1,38 @@
-body {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    min-height: 100vh;
-    display: flex;
-    flex-flow: column wrap;
-    background: #c6ecd9;
-    font-family: "Montserrat", sans-serif;
-    font-weight: 300;
-    font-size: 16px;
-    line-height: 32px;
-  }
-h1, h2 {
-    font-family: "Montserrat", sans-serif;
-    color: white;
-    font-size: 30px;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-    text-align: center;
-  }
 
-header{
-    box-sizing: border-box;
-    flex: 0 1 auto;
-    background-color: black;
-    width: 100%;
-    border-bottom: 10px solid #666699;
+.cuadro{
+  height: 200px;
+}
+
+.cuadro-1{
+  border-radius: 1000px 0px 0px 0px;
+}
+.cuadro-2{
+  border-radius: 0px 1000px 0px 0px;
+}
+.cuadro-4{
+  border-radius: 0px 0px 1000px 0px;
+}
+.cuadro-3{
+  border-radius: 0px 0px 0px 1000px;
+}
+#bloqueBotones{
+  background: #4CB8C4;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to bottom, #3CD3AD, #4CB8C4);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to bottom, #3CD3AD, #4CB8C4); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     
-  }
-
-
+}
 footer{
-   border-top: 10px solid #666699;
-    width: 100%;
-    background-color: black;
-    position: absolute;
-    bottom: 0;
-}
- button {
-    font-family: "Montserrat", sans-serif;
-    font-weight: 600;
-    font-size: 18px;
-    padding: 1em 1em;
-    margin: 0.5em;
-    text-transform: uppercase;
-    border: none;
-    border-radius: 1em;
-    background: #79d2a6;
-    color: white;
-    margin-left: 50%;
-    transform: translateX(-50%);
-    
-    
+  
+  width: 100%;
+  background-color: black;
+  font-family: "Montserrat", sans-serif;
+  color: white;
+  font-size: 30px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  text-align: center;
 }
 
-div {
-    margin-top:1%;
-    margin-bottom: 5%;
-    margin-left: 50%;
-    transform: translateX(-50%);
-    width: 90vw;
-    height: 90vh;
-    max-width: 500px;
-    max-height: 500px;
-    border-radius: 15em;
-    text-align: center;
-    background: #333333;
-    display: flex;
-    
-
+.piola{
+  font-family: "Montserrat", sans-serif;
 }
