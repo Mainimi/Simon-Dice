@@ -28,7 +28,7 @@ function actualizarEstado(estado){
 
 function bloquearEntradaUsuario(){
 
-    $cuadros = document.querySelectorAll(".cuadro");
+    let $cuadros = document.querySelectorAll(".cuadro");
     $cuadros.forEach(
         function(cuadro){
             cuadro.onclick = function(){
@@ -40,13 +40,13 @@ function bloquearEntradaUsuario(){
 }
 
 function generarCuadroAleatorio(){
-    $cuadros = document.querySelectorAll(".cuadro");
+    let $cuadros = document.querySelectorAll(".cuadro");
     let numeroAleatorio = Math.floor(Math.random()*$cuadros.length);
     memoriaMaquina.push($cuadros[numeroAleatorio]);
 }
 
 function habilitarEntradaUsuario(){
-    $cuadros = document.querySelectorAll(".cuadro");
+    let $cuadros = document.querySelectorAll(".cuadro");
     $cuadros.forEach(
         function(cuadro,index){
             cuadro.onclick = function(e){
@@ -58,9 +58,9 @@ function habilitarEntradaUsuario(){
             setTimeout(() => {
             e.target.style.opacity = 0.5;
             e.target.style.border = "0px";
-            validar();
-            },500);    
             
+            },500);    
+            validar();
             }
         }
 
