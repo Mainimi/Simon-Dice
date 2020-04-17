@@ -11,28 +11,39 @@
     <link rel="stylesheet" href="node_modules\bootstrap\dist\css\bootstrap.css">
   </head>
   <body>
+    <!-- Sonidos -->
+    <audio id="sonidoSiguienteRonda" src="sonidos\SonidoSiguienteRonda.mp3"></audio>
+    <audio id="sonidoResultado" src="sonidos\Calculando-puntuacion.mp3"></audio>
+    <audio id="sonidoJugador" src="sonidos\Turno-Jugador.mp3"></audio>
+    <audio id="sonidoSimon" src="sonidos\Turno-simon.mp3"></audio>
+    <audio id="sonidoInicio" src="sonidos\Inicio-juego.mp3"></audio>
+    <audio id="sonidoGameover" src="sonidos\Gameover.mp3"></audio>
           <!-- Barra de informacion -->
-          <header>
-          <div class="row bg-dark text-center " id="barraInformacion">
-            <div class="col-md-7 mt-2 pl-5 rounded-pill">
-              <div class="alert alert-light rounded-pill" role="alert">
-                <strong id="estado" class="text-dark piola" id="estadoJuego">PULSA COMENZAR A JUGAR ^-^</strong>
+          <div class="container-fluid bg-dark">
+            <div class="row text-center" id="barraInformacion">
+              <div class="col-md-7 mt-2 pl-5 rounded-pill">
+                <div class="alert alert-light rounded-pill" role="alert">
+                  <strong id="estado" class="text-dark piola" id="estadoJuego">PULSA COMENZAR A JUGAR ^-^</strong>
+                </div>
               </div>
-            </div>
-            <div class="col-md-2 mt-2">
-              <div class="alert alert-light rounded-pill" role="alert">
-                <strong class="text-dark piola">RONDA:</strong>
-                <strong class="text-dark piola" id="numeroRonda">0</strong>
+              <div class="col-md-2 mt-2">
+                <div class="alert alert-light rounded-pill" role="alert">
+                  <strong class="text-dark piola">RONDA:</strong>
+                  <strong class="text-dark piola" id="numeroRonda">0</strong>
+                </div>
               </div>
-            </div>
-            <div class="col-md-3 mt-3 pl-5 ">
-             <button type="button" id="boton-inicio"  class="btn btn-warning text-dark rounded-pill piola" >COMENZAR A JUGAR!</button>
+              <div class="col-md-3 mt-3 pl-5">
+               <button type="button" id="boton-inicio" class="btn btn-warning text-dark rounded-pill piola" >COMENZAR A JUGAR!</button>
+              </div>
             </div>
           </div>
-        </header>
+         
+        
+      
           <!-- botones -->
-          <div class="cuerpo" id="bloqueBotones">
-            <div class="container pt-5 pb-5" >
+          <div class="bloque-botones" id="bloquePrincipal">
+            
+            <div class="container pt-5 pb-5 ">
               <div class="row">
                 <div class="col-6 bg-success cuadro cuadro-1"></div>
                 <div class="col-6 bg-info cuadro cuadro-2"></div>
@@ -42,11 +53,58 @@
                 <div class="col-6 bg-warning cuadro cuadro-4"></div>
               </div>
             </div>
+             
           </div>
+          <div class="container-fluid  position-fixed bg-dark pt-5 " id="info">
+            <div class="container bg-light piola rounded-pill text-center py-2" id="puntajeJugador">
+              <strong id="mensajeNombreUsuario" class="piola text-uppercase">TERMINA TU PARTIDA PARA PODER REGISTRARLA</strong>
+              <input id="nombreUsuario" class="bg-light d-none" type="text">
+              <button id="botonNombreUsuario" class="btn btn-info btn-sm d-none">OK!</button>
+            </div>
+            <div id="puntajes" class="container bg-light mt-3">
+              <div class="row">
+                <div class="col-xl-6 pl-4">
+                  <div class="row">
+                    <h5 class="h5">1 ~ Mainimi :   </h5>&nbsp<strong class="font-weight-bold puntajes">200</strong>
+                  </div>
+                  <div class="row">
+                    <h5 class="h5">2 ~ LentejitaUwu :   </h5>&nbsp<strong class="font-weight-bold puntajes">50</strong>
+                  </div>
+                  <div class="row">
+                    <h5 class="h5">3 ~ Pancitoxd :  </h5>&nbsp<strong class="font-weight-bold puntajes">4</strong>
+                  </div>
+                  <div class="row">
+                    <h5 class="h5">4 ~ ... </h5>&nbsp<strong class="font-weight-bold puntajes"></strong>
+                  </div>
+                  <div class="row">
+                    <h5 class="h5">5 ~ ... </h5>&nbsp<strong class="font-weight-bold puntajes"></strong>
+                  </div>
+                </div>
+                <div class="col-xl-6  text-uppercase">
+                  <div class="row">
+                    <h5 class="h5">6 ~ ...</h5>&nbsp<strong class="font-weight-bold puntajes">&nbsp</strong>
+                  </div>
+                  <div class="row">
+                    <h5 class="h5">7 ~ ... </h5>&nbsp<strong class="font-weight-bold puntajes"></strong>
+                  </div>
+                  <div class="row">
+                    <h5 class="h5">8 ~ ...   </h5>&nbsp<strong class="font-weight-bold puntajes"></strong>
+                  </div>
+                  <div class="row">
+                    <h5 class="h5">9 ~ ...   </h5>&nbsp<strong class="font-weight-bold puntajes"></strong>
+                  </div>
+                  <div class="row">
+                    <h5 class="h5">10 ~ ...   </h5>&nbsp<strong class="font-weight-bold puntajes"></strong>
+                  </div>
+                </div>
+              </div>
+            </div>
+           </div>
+          
           
           
          <footer class="fixed-bottom">
-        <h1>BY MAINIMI</h1>
+        <h3>BY MAINIMI</h1>
          </footer>
     
     <!-- Scripts -->

@@ -19,7 +19,7 @@
 .cuadro-3{
   border-radius: 0px 0px 0px 1000px;
 }
-#bloqueBotones{
+#bloquePrincipal{
   background: LightSlateGrey;
 }
 footer{
@@ -28,7 +28,6 @@ footer{
   background-color: black;
   font-family: "Montserrat", sans-serif;
   color: white;
-  font-size: 30px;
   letter-spacing: 2px;
   text-transform: uppercase;
   text-align: center;
@@ -37,7 +36,42 @@ footer{
 .piola{
   font-family: "Montserrat", sans-serif;
 }
-html,body,.cuerpo{
+html,body{
   margin:0px;
   height:100%;
+  width: 100%;
+  padding: 0px;
   }
+
+.bloque-botones{
+  height: 55%;
+  margin:0px;
+  padding: 0px;
+  width: 100%;
+  }
+#info{
+    height: 35%;
+    opacity: 100%;
+    margin:0px;
+    padding: 0px;
+    width: 100%;
+  }
+#puntajeJugador{
+  opacity: 100%;
+}
+
+#barraInformacion{
+    width: 100%;
+  }
+#puntajes{
+  border-radius: 15px;
+  height: 160px;
+}
+input{
+    font-family: "Montserrat", sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    border: none;
+    border-bottom: 2px solid black;
+}
+
